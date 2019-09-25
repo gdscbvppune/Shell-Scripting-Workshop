@@ -1,6 +1,6 @@
 #!/bin/bash
 for jpg; do                                 
-    png="${/home/anmol/Downlaods/WhatsApp Image 2019-08-29 at 10.18.25 AM.jpg}.png"                   
+    png="${$HOME/Demo_image}.png"                   
     echo converting "$jpg" ...              
     if convert "$jpg" jpg.to.png ; then     
         mv jpg.to.png "$png"                
@@ -9,5 +9,5 @@ for jpg; do
         exit 1
     fi                                      
 done                                        
-echo all conversions successful             
+echo "All conversions successful :)"             
 exit 0
